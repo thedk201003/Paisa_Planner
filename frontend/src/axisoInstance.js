@@ -4,7 +4,9 @@ import { toast } from 'react-toastify';
 
 const axiosInstance = axios.create({
     // baseURL: 'https://paisaplanner-1.onrender.com/api/', // Ensure this URL is correct
-    baseURL: 'http://localhost:5000/api/'
+    // baseURL: 'http://localhost:5000/api/'
+    baseURL: 'https://paisa-planner.onrender.com/api/'
+
 });
 
 axiosInstance.interceptors.response.use(
