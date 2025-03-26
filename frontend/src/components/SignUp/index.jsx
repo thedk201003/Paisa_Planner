@@ -45,7 +45,7 @@ const Signup = () => {
         <div className="flex min-h-screen bg-gray-100">
             <div className="flex flex-col md:flex-row m-auto bg-white rounded-lg shadow-lg overflow-hidden max-w-4xl w-full">
                 <div className="w-full md:w-1/2 p-8">
-                    <h1 className="text-2xl font-bold mb-2">Paisa Planner</h1>
+                    <h1 className="text-2xl font-bold mb-2">Money Map</h1>
                     <p className="text-gray-600 mb-6">Create your account and start managing your expenses efficiently.</p>
                     <form onSubmit={handleSubmit} className="space-y-4">
                         <input type='text' placeholder='First Name' name='firstname' value={data.firstname} onChange={handleChange} className="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required />

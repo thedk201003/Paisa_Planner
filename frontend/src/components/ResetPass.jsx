@@ -46,7 +46,7 @@ const ResetPass = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900">
       <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-md">
-        <h1 className='text-3xl font-bold mb-4 text-center text-gray-800 dark:text-white'>Paisa Planner</h1>
+        <h1 className='text-3xl font-bold mb-4 text-center text-gray-800 dark:text-white'>Money Map</h1>
         <h2 className="text-2xl font-bold mb-4 text-center text-gray-800 dark:text-white">Reset Password</h2>
         {message && <p className="text-green-600 text-center mb-4">{message}</p>}
         {error && <p className="text-red-600 text-center mb-4">{error}</p>}

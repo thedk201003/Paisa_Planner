@@ -26,7 +26,7 @@ const SideNav = ({ children, data }) => {
         <div className="flex h-screen bg-gradient-to-br from-blue-200 to-indigo-300 p-4">
             {/* Sidebar */}
             <aside className={`bg-gradient-to-b from-blue-600 to-blue-800 text-white w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'} md:relative md:translate-x-0 transition duration-200 space-y-6 py-7 px-2 ease-in-out z-20 rounded-2xl`}>
-                <h2 className='text-white font-bold text-3xl p-2'> Paisa Planner</h2>
+                <h2 className='text-white font-bold text-3xl p-2'> Money Map</h2>
             <nav className="space-y-2 mt-4">
                 <button onClick={toggleSidebar} className="absolute top-2 right-2 text-white md:hidden">
                     <FiX size={24} />
@@ -62,7 +62,7 @@ const SideNav = ({ children, data }) => {
                         <button onClick={toggleSidebar} className="text-gray-500 focus:outline-none focus:text-gray-700 md:hidden">
                             <FiMenu size={24} />
                         </button>
-                        <h1 className="text-xl font-semibold p-2 text-gray-800">Welcome {userName} to Paisa Planner</h1>
+                        <h1 className="text-xl font-semibold p-2 text-gray-800">Welcome {userName} to Money Map</h1>
                         <button
                             onClick={handleLogout}
                             className="bg-red-500 hover:bg-red-600 text-white px-5 py-5 rounded-full transition duration-300"

@@ -12,7 +12,7 @@ const LandingPage = () => {
         transition={{ type: "spring", stiffness: 100 }} className="bg-blue-600 text-white p-5">
         <motion.div whenInview ={{ x: 100 }}
             transition={{ ease: "easeOut", duration: 2 }} className="container mx-auto flex justify-between items-center">
-          <h1 className="text-2xl font-bold">Paisa Planner</h1>
+          <h1 className="text-2xl font-bold">Money Map</h1>
           <div>
             <Link to="/login" className="bg-white text-blue-600 px-4 py-2 rounded-lg hover:bg-blue-100 transition-colors mr-2">
               <FaSignInAlt className="inline mr-2" /> Sign In
@@ -30,7 +30,7 @@ const LandingPage = () => {
             whileInView={{opacity:1,x:0}}
             initial={{opacity:0,x:-100}}
             transition={{ duration: 0.8 }}
-            className="text-6xl font-bold mb-4">Welcome to Paisa Planner.</motion.h2>
+            className="text-6xl font-bold mb-4">Welcome to Money Map.</motion.h2>
           <p className="text-2xl text-fuchsia-800 font-bold mb-8">Your trusted companion for financial wellness.</p>
           <Link to="/signup" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors text-lg">
             Get Started
@@ -52,7 +52,7 @@ const LandingPage = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }} className="mb-12 bg-blue-50 p-8 rounded-lg text-center">
           <h2 className="text-3xl font-semibold mb-4">Get Started Today</h2>
-          <p className="mb-6 text-lg">Join thousands of users who are taking control of their finances with Paisa Planner.</p>
+          <p className="mb-6 text-lg">Join thousands of users who are taking control of their finances with Money Map.</p>
           <Link to="/signup" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors text-lg">
             Create Your Account
           </Link>
@@ -83,7 +83,7 @@ const LandingPage = () => {
 
         <section className="text-center mb-12">
           <h2 className="text-3xl font-semibold mb-4">Support Open Source</h2>
-          <p className="mb-4">Paisa Planner is an open-source project. If you find it useful, please consider contributing and giving it a star on GitHub!</p>
+          <p className="mb-4">Money Map is an open-source project. If you find it useful, please consider contributing and giving it a star on GitHub!</p>
           <a href="https://github.com/thedk201003/PaisaPlanner" target="_blank" rel="noopener noreferrer" className="inline-flex items-center bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition-colors">
             <FaGithub className="mr-2" /> Star on GitHub
           </a>
@@ -91,7 +91,7 @@ const LandingPage = () => {
       </main>
 
       <footer className="bg-gray-800 text-white p-4 text-center">
-        <p>&copy; 2024 Paisa Planner. Developed by Dokesh Kumar Gadtia. All rights reserved.</p>
+        <p>&copy; 2024 Money Map. Developed by Dokesh Kumar Gadtia. All rights reserved.</p>
       </footer>
     </div>
   );
