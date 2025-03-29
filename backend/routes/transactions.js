@@ -1,7 +1,7 @@
 // routes/transaction.js
 const router = require('express').Router();
 const { registerUser, loginUser } = require('../controllers/UserController');
-const { addCategory, getCategories } = require('../controllers/categoryController');
+const { addCategory, getCategories, deleteCategory } = require('../controllers/categoryController');
 const { addExpense, getExpenses, deleteExpense, updateExpense } = require('../controllers/expenseController');
 const { addIncome, getIncome, deleteIncome, updateIncome } = require('../controllers/incomeController')
 const authMiddleware = require('../middlewares/auth'); // Assuming you have an authentication middleware
@@ -66,6 +66,7 @@ router.put('/update-subscription/:id', authMiddleware, updateSubscription);
 // Delete subscription (protected route, requires authentication)
 router.delete('/delete-subscription/:id', authMiddleware, deleteSubscription);
 
+router.delete('/delete-category/:id', authMiddleware, deleteCategory);
 
 //User Summary
 router.get('/summary', authMiddleware, UserSummaryController.getUserSummary);

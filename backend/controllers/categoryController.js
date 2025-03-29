@@ -64,3 +64,23 @@ exports.getCategories = async (req, res) => {
         res.status(500).send('Server Error');
     }
 };
+
+exports.deleteCategory = async (req, res) => {
+    const { id } = req.params;
+    const userId = req.user.id; // Assuming user is authenticated
+
+    try {
+        // Check if the category exists and belongs to the user
+        const category = await Category.findOne({ _id: id, user: userId });
+        if (!category) {
+            return res.status(404).json({ msg: 'Category not found' });
+        }
+
+        // Delete the category
+        await Category.findByIdAndDelete(id);
+        res.json({ msg: 'Category deleted successfully' });
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).send('Server Error');
+    }
+};
